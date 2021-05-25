@@ -1,4 +1,5 @@
-# Image_Classification
+# Image_Detection
+
 
 In this project, Images are classified using Graphical User Interface (GUI) from the given dataset. 
 
