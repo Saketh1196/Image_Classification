@@ -37,16 +37,30 @@ iii. Image Preprocessing is done to convert the images into float and displayed 
 iv. Imported necessary modules from the keras library for the project
 
 ````
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.layers import Dropout
+from keras.layers import Flatten
+from keras.constraints import maxnorm
+from keras.optimizers import adam_v2
+from keras.layers.convolutional import Conv2D
+from keras.layers.convolutional import MaxPooling2D
+from keras.utils import np_utils
 ````
 
-iii. A neural network is defined to train the dataset containing images.
-  1. The input layer for the network is of the shape 28*28.
+v. One hot encoding is performed on the target class. It is done to get a better prediction. The categorical values are first mapped to integer values and then each integer value is represented as a binary vector.
+
+
+vi. A neural network is defined to train the dataset containing images.
+  a. The input layer to the network is of size 32*32
   
-  2. One hidden layer of size 128 neurons are used along with the activation function 'Relu'. If the computed value is negative then the result would be 0 and if the computed value is positive then the output value is 1.
+  b. Different types of hidden layers like Conv2D, MaxPooling, Dense, Dropout layers are used with different size of neurons. 
   
-  3. The output layer is defined with a size of 10 neurons.
+  c. The activation functions used are relu and Softmax
   
-iv. Now the model is compiled with adam optimizer and the accuracy and  losses are calculated.
+vii. Now the model is compiled with adam optimizer and the accuracy and losses are calculated.
+
+v. 
 
 v. Accuracy and losses are calculated by training the model with epoch (1 epoch is one set of Forward and Backward propagation).
 
