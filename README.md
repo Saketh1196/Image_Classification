@@ -93,7 +93,7 @@ vi. Accuracy and losses are calculated by training the model with 10 epoch (1 ep
 
 vii. Now, the list of classes in the dataset are defined in a dictionary and predictions are made with the help of sample image. An image is given as input and is checked whether it belongs to the given class in the dictionary. The image is viewed correctly along with the class number.
 
- [](C:\Users\saket\OneDrive\Pictures\Screenshots\Screenshot%20(7))
+ ![](C:\Users\saket\OneDrive\Pictures\Screenshots\Screenshot%20(7))
 
 
 viii. Two functions are defined to display the image and the corresponding bar graph indicating to the class to which the image belongs and how accurate the image is with the above trained and test accuracy.
