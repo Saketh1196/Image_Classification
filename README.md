@@ -60,13 +60,43 @@ vi. A neural network is defined to train the dataset containing images.
   
 vii. Now the model is compiled with adam optimizer and the accuracy and losses are calculated.
 
-v. 
+v. The summary of the model evaluted is given below:
 
-v. Accuracy and losses are calculated by training the model with epoch (1 epoch is one set of Forward and Backward propagation).
+ ```
+ Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 32, 32, 32)        896       
+_________________________________________________________________
+dropout (Dropout)            (None, 32, 32, 32)        0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 32, 32, 32)        9248      
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 16, 16, 32)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 8192)              0         
+_________________________________________________________________
+dense (Dense)                (None, 512)               4194816   
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 10)                5130      
+=================================================================
+Total params: 4,210,090
+Trainable params: 4,210,090
+Non-trainable params: 0
+__________________________
+```
 
-vi. Predictions are now made on the image. When running the prediction it is observed that it returns the class name as a number for the output
+vi. Accuracy and losses are calculated by training the model with 10 epoch (1 epoch is one set of Forward and Backward propagation) and batch size of 32.
 
-vii. Two functions are defined to display the image and the corresponding bar graph indicating to the class to which the image belongs and how accurate the image is with the above trained and test accuracy.
+vii. Now, the list of classes in the dataset are defined in a dictionary and predictions are made with the help of sample image. An image is given as input and is checked whether it belongs to the given class in the dictionary. The image is viewed correctly along with the class number.
+
+ [](C:\Users\saket\OneDrive\Pictures\Screenshots\Screenshot%20(7))
+
+
+viii. Two functions are defined to display the image and the corresponding bar graph indicating to the class to which the image belongs and how accurate the image is with the above trained and test accuracy.
 
 
 
