@@ -1,8 +1,8 @@
 # Image_Detection
 
 
-In this project, Images are classified using Graphical User Interface (GUI) from the given dataset. 
-
+In this project, Images are classified using Graphical User Interface (GUI) from the given dataset using deep learning with keras. The accuracy for the dataset was found using train test split. The accuracy came about 60%. Images are uploaded as shown in the Gif below. Some of the images were detected accurately while the rest are not classified correctly. 
+ 
 - OpenCV
 
  ```bash
@@ -21,11 +21,23 @@ In this project, Images are classified using Graphical User Interface (GUI) from
  ```
  from tensorflow import keras
  ````
+ 
+ - Tkinter
+ ```
+ import Tkinter as tk
+ ````
 ### Steps involved:
 
-i. The names of the data in the dataset are classified into 9 different groups and are defined in a list.
+i. First, the dataset 'cifar10' is imported from the keras dataset.
 
-ii. Image Preprocessing is done to convert the images into grey scale and displayed in order to ensure that the data that is being trained is correct or not.
+ii. It is then initialized to test train data along with labels.
+
+iii. Image Preprocessing is done to convert the images into float and displayed in order to ensure that the data that is being trained is correct or not.
+
+iv. Imported necessary modules from the keras library for the project
+
+````
+
 
 iii. A neural network is defined to train the dataset containing images.
   1. The input layer for the network is of the shape 28*28.
