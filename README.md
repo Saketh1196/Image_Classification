@@ -37,7 +37,7 @@ iii. Image Preprocessing is done to convert the images into float and displayed 
 iv. Imported necessary modules from the keras library for the project
 
 ````
-
+````
 
 iii. A neural network is defined to train the dataset containing images.
   1. The input layer for the network is of the shape 28*28.
