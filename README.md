@@ -60,6 +60,6 @@ vii. Two functions are defined to display the image and the corresponding bar gr
 
 Due to some problem with the repository in Github, this file cannot be viewed directly. So I have created a link below to access the code:
 
-[Image_Classification.ipynb](https://nbviewer.jupyter.org/github/Saketh1196/Image_Classification/blob/main/Image_Classification.ipynb)
+[Image_Detection.ipynb](https://nbviewer.jupyter.org/github/Saketh1196/Image_Classification/blob/main/Image_Detection.ipynb)
 
-![](Image_Classification.gif)
+![](Image_Detection.gif)
