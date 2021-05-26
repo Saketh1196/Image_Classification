@@ -109,6 +109,6 @@ x. The output is displayed from the below gif:
 
 Due to some problem with the repository in Github, this file cannot be viewed directly. So I have created a link below to access the code:
 
-[Image_Detection.ipynb](https://nbviewer.jupyter.org/github/Saketh1196/Image_Classification/blob/main/Image_Detection.ipynb)
+Link- [Image_Detection.ipynb](https://nbviewer.jupyter.org/github/Saketh1196/Image_Classification/blob/main/Image_Detection.ipynb)
 
 
